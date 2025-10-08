@@ -7,7 +7,8 @@
 }
 
 @theme {
-    --animate-rotate-border: border-rotate 3s linear infinite;
+    --animate-rotate-border: border-rotate                                                                                                                                                                                                                                                                    3s linear infinite;
+    --animate-view: viewAnimation linear both;
 }
 
 @keyframes border-rotate {
@@ -24,3 +25,15 @@
         transform: translateX(-50%);
     }
 }
+
+@keyframes viewAnimation {
+    from {
+        opacity: 0;
+        scale: .5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+} 
